@@ -50,7 +50,7 @@ class ReactJS {
    * @param string $libsrc React's source code
    * @param string $appsrc Application source code
    */
-  function __construct() {
+  function __construct($param = array()) {
     $react = array();
     // stubs, react
     $react[] = "var console = {warn: function(){}, error: print};";
@@ -63,8 +63,8 @@ class ReactJS {
 
     $concatenated = implode(";\n", $react);
 
-    //$this->v8 = new V8Js();
-    //$this->executeJS($concatenated);
+    $this->v8 = new V8Js();
+    $this->executeJS($concatenated);
   }
 
   /**
