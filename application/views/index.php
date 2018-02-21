@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<title>React page</title>
+		<title><?php echo ucwords($page_title); ?></title>
 		<!-- css and stuff -->
 	</head>
 	<body>
